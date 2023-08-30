@@ -1,0 +1,37 @@
+Una vez iniciamos GIT en nuestro proyecto, nuestro archivo/s va a pasar por los 3 ESTADOS DE GIT:
+
+1- WORKING DIRECTORY/DIRECTORIO DE TRABAJO
+2- STAGE/LIMBO
+3- REPOSITORY/REPOSITORIO
+
+1- Es el estado inicial por el que pasa nuestro archivo al comenzar a trabajarlo con GIT, en este estado nuestro proyecto figura como "UNTRACKED/SIN SEGUIMIENTO" (es decir, GIT sabe de su existencia pero no tiene registro de historial y desconoce su contenido)
+
+2- En este estado nuestro archivo/s pasara a tener seguimiento en GIT y los cambios estaran guardados pero de forma provisoria/temporal, es decir, se guarda pero no se implementa en la rama/branch, como si quedara en un borrador. En este estado nuestro archivo puede figurar de dos formas: "A" o "M". "A" de "ADDED/AGREGADO" significa que esta agregado a nuestro estado STAGE/LIMBO, y "M" de "MODIFIED/MODIFICADO" que significa que se identifica que hubo un cambio en el archivo/s y que no se guardó (no se agregó) al STAGE.
+Para poder visualizar los cambios en la etapa de STAGE utilizaremos la opcion "Source Control" del panel lateral izquierdo del VSC. Solo se puede ver el cambio actual y el anterior a ese.
+(Una vez que utilizamos el comando git add por primera vez, nuestro archivo/s pasara al segundo estado y se mantendrá en este hasta que usemos el comando git commit y pase al tercer estado.)
+
+3- Cuando queremos que un cambio quede marcado en la línea de tiempo de nuestra branch es que utilizamos el comando git commit, pasandolo del STAGE al REPOSITORY/REPOSITORIO. Con esto lo que hacemos es grabar el cambio de forma definitiva para que quede en el registro de versiones de nuestra branch en GIT. Hacer un COMMIT es realizar una nueva marca en la línea de tiempo de la branch con el estado del/los archivo/s hasta ese momento.
+
+COMANDOS
+
+git init 
+-Para correr por primera y unica vez GIT sobre el proyecto en el que estamos trabajando-
+*UTILIZACIÓN*
+crear cartpeta donde va a estar el archivo del proyecto> abrir carpeta en VSC> buscar opcion "Terminal"> "New Terminal"> seleccionamos "Launch Profile"> "Git Bash"> ingresamos comando git init
+-Se va a generar una carpeta oculta en la carpeta de nuestro proyecto llamada git, y ahora nuestro proyecto va a ser monitoreado por git-
+
+git add . Ó git add nombre_archivo
+-"git add ." nos permite guardar versiones de varios archivos sobre los cuales estemos trabajando (lease varios archivos HTML que estemos trabajando en simultáneo abiertos en VSC, HTMLs y CCSs...mientras hago este txt estoy con el HTML master del proyecto y podria guardar sus respectivas versiones usando 1 solo comando en vez de ingresar varias veces el comando "git add nombre_archivo")-
+-"git add nombre_archivo" (como podría ser "index.html") nos sirve para guardar una versión de un archivo en específico. Si no queremos guardar versiones de todos los archivos sobre los que estamos trabajando o solo estamos con uno, usamos este comando-
+
+git commit
+-sirve para registrar los cambios de la version trabajada en la versión estable del proyecto. Podemos ejecutar el comando con un comentario y este se guarda en el historial de versiones-
+git commit -m "Descripción de los cambios que hay en el commit"
+
+La diferencia entre el GIT ADD y GIT COMMIT es que este último lo vamos a usar para registrar los cambios significantes que queremos que impacten en la línea de tiempo de la versión estable del proyecto/en la branch master, y se genere en el registro de versiones de git un antes y un después en la branch principal de nuestro proyecto. En cambio el GIT ADD es para registrar los cambios constantes que vamos haciendo en el archivo, que se genere tambien un registro de versiones, pero estas no son definitivas, sino que van a quedar en el estado STAGE/LIMBO de GIT.
+
+git log
+-Sirve para ver el historial de versiones de la rama/branch sobre la que estemos "parados"-
+
+git checkout ID_commit Ó nombre_branch
+-Nos permite navegar por el historial de versiones de la rama/branch seleccionada, ya sea por ID del Commit realizado o por nombre de branch-
