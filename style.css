@@ -6,7 +6,10 @@ body{
 a{
     text-decoration: none;
     color: white;
+    text-shadow: 1px 1px 7px black;
 }
+
+/*STYLE HEADER*/
 
 header{
     display: flex;
@@ -30,12 +33,12 @@ header{
 
 }
 
-nav a{
+.menu a{
     font-weight: 600;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
-nav a:hover{
+.menu a:hover{
     color: #FAAA8F;
 }
 
@@ -47,3 +50,43 @@ nav a:hover{
         padding: 10px 0px;
     }
 }
+
+.buttonlogin{
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+    min-height: 50px;
+    min-width: 150px;
+    background-color: #FAAA8F;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 5px 4px 15px black;
+}
+
+.loginbutton{
+    color: black;
+    text-shadow: none;
+    align-self: center;
+    padding-left: 32px;
+    padding-top: 2px;
+}
+
+/*FIN STYLE HEADER*/
+
+/*STYLE HOME*/
+
+.carruselhome{
+    width: 90%;
+    max-width: 120em;
+}
+
+.imgcarhome{
+    width: 400%;
+}
+
+.carruselhome img{}
+.posiciondelcarrusel{}
+.puntodeposicion{}
