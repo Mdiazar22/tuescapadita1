@@ -121,7 +121,7 @@ header{
     position: relative;
 }
 
-.textoslider{
+.texto1{
     position: absolute;
     text-align: center;
     top: 50em;
@@ -131,13 +131,13 @@ header{
     backdrop-filter: blur(.7em);
 }
 
-.textoslider h2{
+.texto1 h2{
     font-size: 15em;
     margin-bottom: 1em;
     text-shadow: .2em .2em .3em black;
 }
 
-.textoslider p{
+.texto1 p{
     font-size: 7em;
     margin-left: 2em;
     margin-right: 2em;
@@ -168,11 +168,10 @@ header{
     background-color: #92C4EE;
     width: 100%;
     height: 240em;
-    padding: auto;
     display: flex;
 }
 
-.contenedorplanes{
+.back2planes{
     background-color: #FDD8B5;
     width: 79.1%;
     height: 220em;
@@ -181,4 +180,27 @@ header{
     margin-top: 10em;
     display: flex;
 }
+
+.texto2{
+    position: absolute;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 30em;
+    margin-right: 30em;
+    color: black;
+}
+
+.texto2 h2{
+    font-size: 15em;
+    margin-bottom: .5em;
+}
+
+.texto2 p{
+    font-size: 7em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: -1.3em;
+}
+
+/*FIN STYLE PLANES*/
 
