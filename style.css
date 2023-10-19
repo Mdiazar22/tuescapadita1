@@ -14,7 +14,7 @@ body{
 a{
     text-decoration: none;
     color: white;
-    text-shadow: .1em .1em .3em black;
+    text-shadow: .2em .2em .3em black;
 }
 
 /*STYLE HEADER*/
@@ -34,7 +34,7 @@ header{
     display: flex;
     align-items: center;
     color: white;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .logo img{
@@ -46,7 +46,7 @@ header{
 .menu a{
     font-weight: bolder;
     padding-right: 1.7em;
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 .menu a:hover{
@@ -69,12 +69,12 @@ header{
     min-height: 10em;
     min-width: 30em;
     background-color: #FAAA8F;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    box-shadow: 5px 4px 15px black;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+    box-shadow: 1em 1em 3em black;
 }
 
 .loginbutton{
@@ -90,56 +90,67 @@ header{
 
 /*STYLE HOME*/
 
-.carruselhome{
+.HOME{
+    background-color: #64abe3;
     width: 100%;
-    max-width: 120em;
-    padding: 2em;
+    height: 100%;
+    padding: auto;
+    display: flex;
 }
 
-.imgcarhome{
-    background-color: none;
-    opacity: 85%;
-    border-radius: 20%;
+.slider-box{
+    width: 249em;
+    height: 100%;
+    margin: 1em auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
     width: 400%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    -webkit-border-radius: 20%;
-    -moz-border-radius: 20%;
-    -ms-border-radius: 20%;
-    -o-border-radius: 20%;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
+    animation: slide 20s infinite alternate ease-in-out;
+    -webkit-animation: slide 20s infinite alternate ease-in-out;
 }
 
-.carruselhome img{
-    width: calc( 100% / 4 - 2em);
-    padding: 2em;
-    min-height: 10vh;
-
-}
-
-.posiciondelcarrusel{
+.slider-box li{
     width: 100%;
-    padding: .4em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
+    position: relative;
 }
 
-.puntodeposicion{
-    width: 2em;
-    height: 2em;
-    margin: .2em;
-    
+.textoslider{
+    position: absolute;
+    text-align: center;
+    padding: 0em 1em;
+    top: 20em;
+    color: white;
+}
+
+.textoslider h2{
+    font-size: 15em;
+    margin-bottom: 1em;
+    text-shadow: .2em .2em .3em black;
+}
+
+.textoslider p{
+    font-size: 7em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-shadow: .1em .1em .2em black;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
 }
