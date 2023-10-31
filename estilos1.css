@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*HOME*/
+
+.HOME{
+    background-color: #64abe3;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    display: flex;
+}
+
+.slider-box{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: 1em auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+    -webkit-animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    object-fit: cover;
+    filter: blur(0.3em);
+    -webkit-filter: blur(0.3em);
+}
+
+.textoslider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.textoslider h2{
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-shadow: .2em .2em .3em black;
+}
+
+.textoslider p{
+    font-size: 1.1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: -1.3em;
+    text-shadow: .1em .1em .2em black;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+/*FIN STYLE HOME*/
+
+/*
+.HOME{
+    background-color: #64abe3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: auto;
+    justify-content: center;
+}
+
+.slider-box{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+    -webkit-animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    filter: blur(.7em);
+    -webkit-filter: blur(.7em);
+}
+
+.texto1{
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.texto1 h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-shadow: .2em .2em .3em black;
+}
+
+.texto1 p{
+    font-size: 1em;
+    margin: 1em 1em auto;
+    margin-top: -1.3em;
+    text-shadow: .1em .1em .2em black;
+}
+
+.slider-box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+*/
+/*FIN HOME*/
+
+/*PLANES*/
+.planes-section {
+    width: 100%;
+    text-align: center;
+    background-color: #92C4EE;
+    padding: 2rem 0;
+}
+
+.planes-content {
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #FDD8B5;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.planes-gallery {
+    display: flex;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.product-card {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 23em;
+    flex: 0 0 calc(20% - 2rem);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.1);
+    margin: 0 1rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
+
+.product-card img {
+    width: 100%;
+    height: 6em;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+.reservar-button {
+    display: block;
+    background-color: #FAAA8F;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.reservar-button:hover {
+    background-color: #F9C6B3;
+}

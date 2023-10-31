@@ -95,15 +95,15 @@ header{
     background-color: #64abe3;
     width: 100%;
     height: 100%;
-    padding: auto;
     display: flex;
+    padding: auto;
 }
 
 .slider-box{
-    width: 249em;
+    width: 24em;
     height: 100%;
     margin: 1em auto 0;
-    margin-bottom: 10em;
+    margin-bottom: 7em;
     overflow: hidden;
 }
 
@@ -119,6 +119,8 @@ header{
     width: 100%;
     list-style: none;
     position: relative;
+    filter: blur(.7em);
+    -webkit-filter: blur(.7em);
 }
 
 .texto1{
@@ -128,11 +130,10 @@ header{
     margin-left: 30em;
     margin-right: 30em;
     color: white;
-    backdrop-filter: blur(.7em);
 }
 
 .texto1 h2{
-    font-size: 15em;
+    font-size: 3em;
     margin-bottom: 1em;
     text-shadow: .2em .2em .3em black;
 }
@@ -158,6 +159,26 @@ header{
     70% {margin-left: -200%;}
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
+}
+
+.textohome{
+    background-color: #64abe3;
+    display: flex;
+    padding: 0;
+}
+
+.textohome ul{
+    background-color: #64abe3;
+    display: flex;
+    padding: 0;
+}
+
+.textohome li{
+    background-color: #64abe3;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    padding: 0;
 }
 
 /*FIN STYLE HOME*/
@@ -202,5 +223,124 @@ header{
     margin-top: -1.3em;
 }
 
+.listaplanes{
+    background-color: #F6E3D4;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 60em 0;
+    position: relative;
+}
+
+.productcard {
+    width: 20%;
+    margin: .5em;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: .2em;
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    -ms-border-radius: .2em;
+    -o-border-radius: .2em;
+    cursor: pointer;
+    padding-top: .2em;
+    box-shadow: 0 .2em .5em black, 0 .1em .1em black;
+    transition: 4s;
+    -webkit-transition: 4s;
+    -moz-transition: 4s;
+    -ms-transition: 4s;
+    -o-transition: 4s;
+    background-color: white;
+}
+
+.productcard :hover{
+    box-shadow: 0 .1em .1em black, 0 .1em .1em black;
+    transform: translate(0, .2em);
+    -webkit-transform: translate(0, .2em);
+    -moz-transform: translate(0, .2em);
+    -ms-transform: translate(0, .2em);
+    -o-transform: translate(0, .2em);
+}
+
+.productcard img{
+    width: 100%;
+    height: 20em;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.productcard h3{
+    text-align: center;
+    font-size: 5em;
+    margin: 0;
+    padding-top: 1em;
+}
+
+.productcard p{
+    text-align: left;
+    padding-top: .5em;
+}
+
+.productcard button{
+    background-color: #FAAA8F;
+    text-align: center;
+    font-size: 5em;
+    color: white;
+    width: 100%;
+    padding: 2em;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
 /*FIN STYLE PLANES*/
 
+/*STYLE ARMALO*/
+.ARMALO{
+    background-color: #BBDBF7;
+    width: 100%;
+    height: 240em;
+    display: flex;
+    position: absolute;
+}
+
+.back2armalo{
+    background-color: #F9D199;
+    width: 79.1%;
+    height: 220em;
+    position: absolute;
+    margin-left: 33.5em;
+    margin-top: 10em;
+    display: flex;
+}
+
+.texto3{
+    position: absolute;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 30em;
+    margin-right: 30em;
+    color: black;
+}
+
+.texto3 h2{
+    font-size: 15em;
+    margin-bottom: .5em;
+}
+
+.texto3 p{
+    font-size: 7em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: -1.3em;
+}
+
+
+/*FIN STYLE ARMALO*/
