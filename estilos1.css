@@ -4,8 +4,75 @@ body {
     padding: 0;
 }
 
-/*HOME*/
+/*HEADER*/
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #64abe3;
+    color: #fff;
+    padding: 0.6em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
 
+.logo img {
+    height: 3.1em;
+    margin-left: 5em;
+}
+
+.nombre-empresa {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 0.6em;
+}
+
+.navegacion ul {
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+    display: flex;
+    margin-right: 6em;
+}
+
+.navegacion li {
+    margin: 0 1em;
+}
+
+.navegacion li :hover{
+    color: #FAAA8F;
+    text-shadow: .2em .2em .3em black;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.boton-login a {
+    background-color: #FAAA8F;
+    color: black;
+    font-weight: bold;
+    margin-right: 5em;
+    padding: 1em 2em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+}
+
+.boton-login :hover{
+    background-color: #F9C6B3;
+    box-shadow: .2em .2em .5em black;
+}
+/*FIN HEADER*/
+/*HOME*/
 .HOME{
     background-color: #64abe3;
     width: 100%;
@@ -75,80 +142,7 @@ body {
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
 }
-
 /*FIN STYLE HOME*/
-
-/*
-.HOME{
-    background-color: #64abe3;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    padding: auto;
-    justify-content: center;
-}
-
-.slider-box{
-    position: relative;
-    width: 70%;
-    height: 100%;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    overflow: hidden;
-}
-
-.slider-box ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
-    -webkit-animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-box li{
-    width: 100%;
-    list-style: none;
-    filter: blur(.7em);
-    -webkit-filter: blur(.7em);
-}
-
-.texto1{
-    position: absolute;
-    text-align: center;
-    color: white;
-}
-
-.texto1 h2{
-    font-size: 2em;
-    margin-bottom: 1em;
-    text-shadow: .2em .2em .3em black;
-}
-
-.texto1 p{
-    font-size: 1em;
-    margin: 1em 1em auto;
-    margin-top: -1.3em;
-    text-shadow: .1em .1em .2em black;
-}
-
-.slider-box img{
-    width: 100%;
-    object-fit: cover;
-}
-
-@keyframes slide{
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
-*/
-/*FIN HOME*/
-
 /*PLANES*/
 .planes-section {
     width: 100%;
