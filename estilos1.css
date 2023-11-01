@@ -4,6 +4,14 @@ body {
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 2em;
+}
+
 /*HEADER*/
 .sticky-header {
     position: fixed;
