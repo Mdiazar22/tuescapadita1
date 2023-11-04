@@ -12,6 +12,11 @@ section[id] {
     scroll-margin-top: 2em;
 }
 
+.nombre-empresa a{
+    text-decoration: none;
+    color: white;
+}
+
 /*HEADER*/
 .sticky-header {
     position: fixed;
