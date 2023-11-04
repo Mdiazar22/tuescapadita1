@@ -52,13 +52,13 @@
         </section>
     </section>
     <!--FIN SECCION HOME (MARIEL)-->
-    <!--SECCION PLANES (JOAQUIN)-->
+    <!--SECCION PLANES (JOAQUIN Y MARIEL)-->
     <section class="planes-section" id="PLANES">
         <div class="planes-content">
             <h1>Planes</h1>
             <h2>En caso que no tengas ganas o tiempo para pensartelo tanto, te dejamos los paquetes que más nos piden.</h2>
             <div class="planes-gallery">
-                <div class="product-card">
+                <div class="planes-product-card">
                     <img src="CSS/sierraventana.jpg" alt="Producto 1">
                     <h4>Sierra de la Ventana</h4>
                     <ul>
@@ -69,7 +69,7 @@
                     </ul>
                     <a href="reservar.html" class="reservar-button">RESERVAR</a>
                 </div>
-                <div class="product-card">
+                <div class="planes-product-card">
                     <img src="CSS/tandil.jfif" alt="Producto 1">
                     <h4>Tandil</h4>
                     <ul>
@@ -80,7 +80,7 @@
                     </ul>
                     <a href="reservar.html" class="reservar-button">RESERVAR</a>
                 </div>
-                <div class="product-card">
+                <div class="planes-product-card">
                     <img src="CSS/necochea.jpg" alt="Producto 1">
                     <h4>Necochea</h4>
                     <ul>
@@ -91,7 +91,7 @@
                     </ul>
                     <a href="reservar.html" class="reservar-button">RESERVAR</a>
                 </div>
-                <div class="product-card">
+                <div class="planes-product-card">
                     <img src="CSS/termasriohondo.jpg" alt="Producto 1">
                     <h4>Termas de Río Hondo</h4>
                     <ul>
@@ -104,16 +104,244 @@
                 </div>
             </div>
     </section>
-    <!--FIN SECCION PLANES (JOAQUIN)-->
+    <!--FIN SECCION PLANES (JOAQUIN y MARIEL)-->
     <!--SECCION ARMALO-->
-    <section class="ARMALO">
-        <div class="back2armalo">
-            <div class="texto3">
-                <h2>¡Armalo!</h2>
-                <p>Si las opciones de los packs no te convencen, ¡armalo vos mismx! Elegí lo que más prefieras y armá tu escapadita deseada.</p>
+    <section class="armalo-section">
+        <div class="armalo-contenedor">
+        <div class="armalo-header">
+          <h1 class="armalo-encabezado">¡Armalo!</h1>
+          <p class="armalo-encabezado">Si las opciones de los packs no te convencen, ¡armalo vos mismx! Elegí lo que más prefieras y armá tu escapadita deseada.</p>
+        </div>
+        <div class="armalo-opciones">
+          <div class="sliders-and-products">
+            <div class="armalo-sliders">
+              <h3 class="center-text">Selecciona tus preferencias:</h3>
+              <div class="slider">
+                <h4>Destino</h4>
+                <input type="range" min="0" max="1" step="1" value="0" class="slider-input" id="slider1">
+                <p id="destinoLabel">Playa</p>
+              </div>
+              <div class="slider">
+                <h4>Cantidad de Personas</h4>
+                <input type="range" min="1" max="4" value="2" class="slider-input" id="slider2">
+                <p id="personasLabel">2 personas</p>
+              </div>
+              <div class="slider">
+                <h4>Cantidad de Días</h4>
+                <input type="range" min="1" max="7" step="2" value="3" class="slider-input" id="slider3">
+                <p id="díasLabel">3 días</p>
+              </div>
             </div>
-        </div>    
-    </section>
+            <div class="armalo-carousel">
+              <!--FICHAS PLAYA-->
+              <!--FICHAS 1 PERSONA-->
+              <div class="product-card" data-destino="Playa" data-personas="1" data-días="1">
+                <img src="CSS/termasriohondo.jpg" alt="paquete termas">
+                <h4>Termas de Río Hondo</h4>
+                <p>1 Día / 1 Noche -- Depto. p/1 Persona / Complejo. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="1" data-días="3">
+                <img src="CSS/mardel.jpeg" alt="paquete mardel">
+                <h4>Mar del Plata</h4>
+                <p>3 Días / 2 Noches -- Depto. p/1 Persona / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="1" data-días="5">
+                <img src="CSS/termasriohondo.jpg" alt="paquete termas">
+                <h4>Termas de Río Hondo</h4>
+                <p>5 Días / 4 Noches -- Depto. p/1 Persona / Complejo. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="1" data-días="7">
+                <img src="CSS/necochea.jpg" alt="paquete necochea">
+                <h4>Necochea</h4>
+                <p>7 Días / 6 Noches -- Depto. p/1 Persona / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <!--FICHAS 2 PERSONAS-->
+              <div class="product-card" data-destino="Playa" data-personas="2" data-días="1">
+                <img src="CSS/termasriohondo.jpg" alt="paquete termas">
+                <h4>Termas de Río Hondo</h4>
+                <p>1 Día / 1 Noche -- Depto. p/2 Personas / Complejo. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="2" data-días="3">
+                <img src="CSS/mardel.jpeg" alt="paquete mardel">
+                <h4>Mar del Plata</h4>
+                <p>3 Días / 2 Noches -- Depto. p/2 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="2" data-días="5">
+                <img src="CSS/termasriohondo.jpg" alt="paquete termas">
+                <h4>Termas de Río Hondo</h4>
+                <p>5 Días / 4 Noches -- Depto. p/2 Personas / Complejo. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="2" data-días="7">
+                <img src="CSS/necochea.jpg" alt="paquete necochea">
+                <h4>Necochea</h4>
+                <p>7 Días / 6 Noches -- Depto. p/2 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <!--FICHAS 3 PERSONAS-->
+              <div class="product-card" data-destino="Playa" data-personas="3" data-días="1">
+                <img src="CSS/termasriohondo.jpg" alt="paquete termas">
+                <h4>Termas de Río Hondo</h4>
+                <p>1 Día / 1 Noche -- Depto. p/3 Personas / Complejo. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="3" data-días="3">
+                <img src="CSS/mardel.jpeg" alt="paquete mardel">
+                <h4>Mar del Plata</h4>
+                <p>3 Días / 2 Noches -- Depto. p/3 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="3" data-días="5">
+                <img src="CSS/termasriohondo.jpg" alt="paquete termas">
+                <h4>Termas de Río Hondo</h4>
+                <p>5 Días / 4 Noches -- Depto. p/3 Personas / Complejo. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="3" data-días="7">
+                <img src="CSS/necochea.jpg" alt="paquete necochea">
+                <h4>Necochea</h4>
+                <p>7 Días / 6 Noches -- Depto. p/3 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <!--FICHAS 4 PERSONAS-->
+              <div class="product-card" data-destino="Playa" data-personas="4" data-días="1">
+                <img src="CSS/termasriohondo.jpg" alt="paquete termas">
+                <h4>Termas de Río Hondo</h4>
+                <p>1 Día / 1 Noche -- Depto. p/4 Personas / Complejo. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="4" data-días="3">
+                <img src="CSS/mardel.jpeg" alt="paquete mardel">
+                <h4>Mar del Plata</h4>
+                <p>3 Días / 2 Noches -- Depto. p/4 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="4" data-días="5">
+                <img src="CSS/mardel.jpeg" alt="paquete mardel">
+                <h4>Mar del Plata</h4>
+                <p>5 Días / 4 Noches -- Depto. p/4 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Playa" data-personas="4" data-días="7">
+                <img src="CSS/necochea.jpg" alt="paquete necochea">
+                <h4>Necochea</h4>
+                <p>7 Días / 6 Noches -- Depto. p/4 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <!--FICHAS MONTAÑA-->
+              <!--FICHAS 1 PERSONA-->
+              <div class="product-card" data-destino="Montaña" data-personas="1" data-días="1">
+                <img src="CSS/tandil.jfif" alt="paquete tandil">
+                <h4>Tandil</h4>
+                <p>1 Día / 1 Noche -- Cabaña p/1 Persona - Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="1" data-días="3">
+                <img src="CSS/sierraventana.jpg" alt="paquete sierra de la ventana">
+                <h4>Sierra de la Ventana</h4>
+                <p>3 Días / 2 Noches -- Cabaña p/1 Persona - Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="1" data-días="5">
+                <img src="CSS/purmamarca.jpg" alt="paquete purmamarca">
+                <h4>Purmamarca</h4>
+                <p>5 Días / 4 Noches -- PH p/1 Persona / Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="1" data-días="7">
+                <img src="CSS/bariloche.jpg" alt="paquete bariloche">
+                <h4>Bariloche</h4>
+                <p>7 Días / 6 Noches -- Hab. Hotel p/1 Persona / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <!--FICHAS 2 PERSONAS-->
+              <div class="product-card" data-destino="Montaña" data-personas="2" data-días="1">
+                <img src="CSS/tandil.jfif" alt="paquete tandil">
+                <h4>Tandil</h4>
+                <p>1 Día / 1 Noche -- Cabaña p/2 Personas - Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="2" data-días="3">
+                <img src="CSS/sierraventana.jpg" alt="paquete sierra de la ventana">
+                <h4>Sierra de la Ventana</h4>
+                <p>3 Días / 2 Noches -- Cabaña p/2 Personas - Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="2" data-días="5">
+                <img src="CSS/purmamarca.jpg" alt="paquete purmamarca">
+                <h4>Purmamarca</h4>
+                <p>5 Días / 4 Noches -- PH p/2 Personas / Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="2" data-días="7">
+                <img src="CSS/bariloche.jpg" alt="paquete bariloche">
+                <h4>Bariloche</h4>
+                <p>7 Días / 6 Noches -- Hab. Hotel p/2 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <!--FICHAS 3 PERSONAS-->
+              <div class="product-card" data-destino="Montaña" data-personas="3" data-días="1">
+                <img src="CSS/tandil.jfif" alt="paquete tandil">
+                <h4>Tandil</h4>
+                <p>1 Día / 1 Noche -- Cabaña p/3 Personas - Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="3" data-días="3">
+                <img src="CSS/sierraventana.jpg" alt="paquete sierra de la ventana">
+                <h4>Sierra de la Ventana</h4>
+                <p>3 Días / 2 Noches -- Cabaña p/3 Personas - Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="3" data-días="5">
+                <img src="CSS/purmamarca.jpg" alt="paquete purmamarca">
+                <h4>Purmamarca</h4>
+                <p>5 Días / 4 Noches -- PH p/3 Personas / Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="3" data-días="7">
+                <img src="CSS/bariloche.jpg" alt="paquete bariloche">
+                <h4>Bariloche</h4>
+                <p>7 Días / 6 Noches -- Hab. Hotel p/3 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <!--FICHAS 4 PERSONAS-->
+              <div class="product-card" data-destino="Montaña" data-personas="4" data-días="1">
+                <img src="CSS/tandil.jfif" alt="paquete tandil">
+                <h4>Tandil</h4>
+                <p>1 Día / 1 Noche -- Cabaña p/4 Personas - Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="4" data-días="3">
+                <img src="CSS/sierraventana.jpg" alt="paquete sierra de la ventana">
+                <h4>Sierra de la Ventana</h4>
+                <p>3 Días / 2 Noches -- Cabaña p/4 Personas - Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="4" data-días="5">
+                <img src="CSS/purmamarca.jpg" alt="paquete purmamarca">
+                <h4>Purmamarca</h4>
+                <p>5 Días / 4 Noches -- PH p/4 Personas / Centro. -- Buffet NO Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <div class="product-card" data-destino="Montaña" data-personas="4" data-días="7">
+                <img src="CSS/bariloche.jpg" alt="paquete bariloche">
+                <h4>Bariloche</h4>
+                <p>7 Días / 6 Noches -- Hab. Hotel p/3 Personas / Centro. -- Buffet Incluido. -- Se permiten mascotas.</p>
+                <button class="reserve-button">Reservar</button>
+              </div>
+              <!--FIN FICHAS-->
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <script src="JS.js"></script>
     <!--FIN SECCION ARMALO-->
 </body>
 </html>
