@@ -372,6 +372,16 @@ ul li {
     text-align: center;
     padding: 0 10em;
   }
+
+  .reserve-button{
+    background-color: #FAAA8F;
+    color: #fff;
+    border: none;
+    padding: 1.25em 2.5em;
+    cursor: pointer;
+    margin-bottom: 2em;
+    font-weight: bold;
+  }
 /*FIN ARMALO*/
 /*CONTACTANOS*/
 .contactanos-contenedor {
@@ -458,3 +468,112 @@ ul li {
 .encabezado-form{
     margin-top: 0em;
 }
+/*FIN CONTACTANOS*/
+/*FOOTER*/
+footer {
+  background-color: #FDD8B5;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.contenedor-footer {
+  background-color: #64ABE3;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+.contenedor-footer h1 {
+  font-size: 2em;
+  margin-bottom: .5em;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.imagenes-footer {
+  position: relative;
+  width: 100%;
+}
+
+.img-pie {
+  width: 100%;
+  display: block;
+}
+
+.img-superpuesta1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20em;
+  margin-top: 2em;
+  width: 3em;
+}
+
+.img-superpuesta2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20em;
+  margin-top: 7em;
+  width: 3em;
+}
+
+.img-superpuesta3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20em;
+  margin-top: 12em;
+  width: 3em;
+}
+
+.txt-superpuesto1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10em;
+  margin-top: 3em;
+}
+
+.txt-superpuesto2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10em;
+  margin-top: 8em;
+}
+
+.txt-superpuesto3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10em;
+  margin-top: 13em;
+}
+
+.imagenes-footer a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.imagenes-footer a :hover{
+  color: #FAAA8F;
+  text-shadow: .1em .1em .2em black;
+}
+
+.txt-superpuesto4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 18em;
+  margin-top: 25em;
+  font-weight: bold;
+}
+/*FIN FOOTER*/
