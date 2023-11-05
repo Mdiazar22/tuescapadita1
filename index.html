@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="#PLANES">PLANES</a></li>
                 <li><a href="#ARMALO">ARMALO</a></li>
-                <li><a href="#CONTACTO">CONTACTO</a></li>
+                <li><a href="#CONTACTANOS">CONTACTANOS</a></li>
                 <li><a href="#NOSOTRXS">NOSOTRXS</a></li>
                 <li><a href="#">DESTINOS</a></li>
             </ul>
@@ -105,7 +105,7 @@
             </div>
     </section>
     <!--FIN SECCION PLANES (JOAQUIN y MARIEL)-->
-    <!--SECCION ARMALO-->
+    <!--SECCION ARMALO (JOAQUIN)-->
     <section class="armalo-section" id="ARMALO">
         <div class="armalo-contenedor">
         <div class="armalo-header">
@@ -341,7 +341,32 @@
         </div>
       </div>
       </section>
+      <!--FIN SECCION ARMALO (JOAQUIN)-->
+      <!--SECCION CONTACTANOS-->
+      <section class="contactanos-contenedor" id="CONTACTANOS">
+        <div class="contactanos-contenido">
+          <h2 class="encabezado-form">Contactanos</h2>
+          <p class="encabezado-form">¿Te interesa armar paquetes más amplios o planificar tus vacaciones con nosotrxs?¡Rellená el formulario y unx de nuestrxs asesores se va a estar comunicando!</p>
+          <form class="form" action="tu_script_de_procesamiento.php" method="post">
+            <div class="left">
+                <p class="texto-form">Nombre Completo</p>
+              <input type="text" placeholder="Nombre Completo" name="nombre" required>
+              <p class="texto-form">Fecha de Nacimiento</p>
+              <input type="text" placeholder="Fecha de Nacimiento" name="fecha_nacimiento" required>
+              <p class="texto-form">Teléfono</p>
+              <input type="text" placeholder="Teléfono" name="telefono" required>
+              <p class="texto-form">Email</p>
+              <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="right">
+                <p class="texto-form">Contanos qué necesitas</p>
+              <textarea placeholder="Escribe tu mensaje aquí" name="mensaje" rows="4" required></textarea>
+              <button type="submit">ENVIAR</button>
+            </div>
+          </form>
+        </div>
+    </section>
+      <!--FIN SECCION CONTACTANOS-->
       <script src="JS.js"></script>
-    <!--FIN SECCION ARMALO-->
 </body>
 </html>
