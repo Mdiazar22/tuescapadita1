@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nombre-empresa a{
+    text-decoration: none;
+    color: white;
+}
+
+/*HEADER*/
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #64abe3;
+    color: #fff;
+    padding: 0.6em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 3.1em;
+    margin-left: 5em;
+}
+
+.nombre-empresa {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 0.6em;
+}
+
+body{
+    background-color: #64abe3;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1em;
+}
+
+
+.form{
+    width: 40%;
+    padding: 3em;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #28BBB8;
+    border-color: #F6E3D4;
+    border-style: solid;
+    border-width: 3em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.titulo{
+    color:#000000;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.cajas{
+    width: 100%;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    border-radius: .2em;
+    border: none;
+    border-left: 1em solid #d9e4ea;
+    transition: all .5s ease;
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    -ms-border-radius: .2em;
+    -o-border-radius: .2em;
+}
+
+.cajas:hover, .cajas:focus{
+    border-left: 1em solid #FAAA8F;
+}
+
+.termino1{
+    text-align: center;
+    color: #3b3b3b;
+}
+.termino2{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.termino2:hover{
+    color: #dbdbdb;
+}
+
+.btn{
+    width: 100%;
+    padding: 1em;
+    border-radius:.2em;
+    border: none;
+    margin: 2em 0;
+    font-size: 1em;
+    font-weight: bold;
+    background: #FAAA8F;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-border-radius:.2em;
+    -moz-border-radius:.2em;
+    -ms-border-radius:.2em;
+    -o-border-radius:.2em;
+}
+.btn:hover{
+    background: #F9C6B3;
+    box-shadow: .2em .2em .5em black;
+    text-shadow: .2em .2em .3em black;
+}
+
+.tengo-cuenta{
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tengo-cuenta:hover{
+    color: #dbdbdb;
+}
