@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 2em;
+}
+
+.nombre-empresa a{
+    text-decoration: none;
+    color: white;
+}
+
+/*HEADER*/
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #64abe3;
+    color: #fff;
+    padding: 0.6em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 3.1em;
+    margin-left: 5em;
+}
+
+.nombre-empresa {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 0.6em;
+}
+/*FIN HEADER*/
+
+.LOGIN{
+    background-color: #64ABE3;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-login {
+    display: block;
+    background-color: #F6E3D4;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 85%;
+    height: 100%;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+
+.login-form {
+    justify-content: center;
+    width: 70%;
+    padding: 2em 0;
+    margin: 0 auto;
+    background-color: #28BBB8;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+.login-form h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+.login {
+    width: 50%;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.login label {
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    color:black;
+    margin-top: .5em;
+}
+
+.login input {
+    font-size: 1em;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 3em;
+    margin-bottom: 1em;
+    padding: 1em 1em 1em 1em;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1em 1em 1em 1em;
+    -moz-border-radius: 1em 1em 1em 1em;
+    -webkit-border-radius: 1em 1em 1em 1em;
+    -ms-border-radius: 1em 1em 1em 1em;
+    -o-border-radius: 1em 1em 1em 1em;
+}
+
+.login input::placeholder {
+    color: #E4E4E4;
+}
+
+.login button {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: .5em .5em .5em .5em;
+    -moz-border-radius: .5em .5em .5em .5em;
+    -webkit-border-radius: .5em .5em .5em .5em;
+    background-color: #FAAA8F;
+    margin-top: .5em;
+    -ms-border-radius: .5em .5em .5em .5em;
+    -o-border-radius: .5em .5em .5em .5em;
+}
+
+.login button:hover {
+    background-color: #F9C6B3;
+    box-shadow: .2em .2em .5em black;
+    text-shadow: .2em .2em .3em black;
+}
+
+.registro-contenedor{
+    display: flex;
+    background-color: #F6E3D4;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.crear-cuenta{
+    display: block;
+    width: 100%;
+    padding: 2em 0;
+    margin: 0 auto;
+    background-color: #28BBB8;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+.crear-cuenta h1{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.crear-cuenta button{
+    padding: 2em;    
+    width: 80%;
+    border: none;
+    border-radius: .5em .5em .5em .5em;
+    -moz-border-radius: .5em .5em .5em .5em;
+    -webkit-border-radius: .5em .5em .5em .5em;
+    background-color: #FAAA8F;
+    margin-top: .5em;
+    -ms-border-radius: .5em .5em .5em .5em;
+    -o-border-radius: .5em .5em .5em .5em;
+}
+
+.registro{
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 5.5em;
+    color: white;
+}
+
+.crear-cuenta button:hover {
+    background-color: #F9C6B3;
+    box-shadow: .2em .2em .5em black;
+    text-shadow: .2em .2em .3em black;
+}

@@ -96,7 +96,7 @@ section[id] {
 
 .slider-box{
     position: relative;
-    width: 70%;
+    width: 85%;
     height: 100%;
     margin: 1em auto 0;
     overflow: hidden;
@@ -122,21 +122,20 @@ section[id] {
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-top: 3em;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
 }
 
 .textoslider h2{
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 1em;
     text-shadow: .2em .2em .3em black;
 }
 
 .textoslider p{
-    font-size: 1.1em;
-    margin-left: 2em;
-    margin-right: 2em;
+    font-size: 1.5em;
     margin-top: -1.3em;
     text-shadow: .1em .1em .2em black;
 }
@@ -170,7 +169,7 @@ section[id] {
     margin: 0 auto;
     padding: 2rem;
     background-color: #FDD8B5;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
 }
 
 .planes-section h1 {
@@ -260,7 +259,7 @@ ul li {
     justify-items: center;
     margin: 0 auto;
     padding: 2em;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
   }
   
   .armalo-header{
