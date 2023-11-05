@@ -1,4 +1,4 @@
-// script.js
+//script joaquin ranges
 
 const sliders = document.querySelectorAll('.slider-input');
 const labels = {
@@ -38,3 +38,5 @@ function updateCarousel() {
 }
 
 updateCarousel();
+
+//fin script joaquin ranges
